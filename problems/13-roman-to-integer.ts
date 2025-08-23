@@ -11,6 +11,12 @@ export function romanToInt(s: string): number {
     M: 1000,
   };
 
+  // const integers = s.split("").map((c) => map[c]);
+  // return integers.reduce(
+  //   (acc, x, i) => (x < integers[i + 1] ? acc - x : acc + x),
+  //   0,
+  // );
+
   let res = 0;
 
   for (let i = 0; i < s.length; i++) {
