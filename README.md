@@ -1,10 +1,13 @@
 # Coding Playground
 
+[![Go Tests](https://github.com/iamhectorsosa/coding-practice/workflows/Tests/badge.svg?job=test-go)](https://github.com/iamhectorsosa/coding-practice/actions)
+[![TypeScript Tests](https://github.com/iamhectorsosa/coding-practice/workflows/Tests/badge.svg?job=test-ts)](https://github.com/iamhectorsosa/coding-practice/actions)
+
 A collection of problems and solutions implemented in Go and TypeScript with unit tests.
 
 ## Structure
 
-```
+```txt
 ├── go/problems/     # Go solutions with tests
 ├── ts/problems/     # TypeScript solutions with tests
 └── Makefile         # Execute commands at root
