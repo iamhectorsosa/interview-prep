@@ -1,7 +1,6 @@
 # Coding Playground
 
-[![Go Tests](https://github.com/iamhectorsosa/coding-practice/workflows/test.yml/badge.svg?job=test-go)](https://github.com/iamhectorsosa/coding-practice/actions)
-[![TypeScript Tests](https://github.com/iamhectorsosa/coding-practice/workflows/test.yml/badge.svg?job=test-ts)](https://github.com/iamhectorsosa/coding-practice/actions)
+[![Tests](https://github.com/iamhectorsosa/interview-prep/workflows/test.yml/badge.svg)](https://github.com/iamhectorsosa/interview-prep/actions)
 
 A collection of problems and solutions implemented in Go and TypeScript with unit tests.
 
