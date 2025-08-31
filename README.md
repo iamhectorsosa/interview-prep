@@ -1,6 +1,6 @@
 # Coding Playground
 
-![Tests](https://github.com/iamhectorsosa/interview-prep/workflows/test.yml/badge.svg)
+![Tests](https://github.com/iamhectorsosa/interview-prep/actions/workflows/test.yml/badge.svg)
 
 A collection of problems and solutions implemented in Go and TypeScript with unit tests.
 
