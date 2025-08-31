@@ -1,2 +1,2 @@
-node_modules
-pnpm-lock.yaml
+ts/node_modules
+ts/pnpm-lock.yaml
