@@ -14,7 +14,7 @@ all:
 	@echo ""
 
 test-go:
-	rg --files -t go ./go | entr -c go test -C go ./problems/... -v
+	rg --files -t go ./go | entr -c go test -C go ./problems/...
 
 test-go-run:
 	go test -C go ./problems/... -v

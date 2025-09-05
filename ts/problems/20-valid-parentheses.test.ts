@@ -27,7 +27,7 @@ describe("isValid", () => {
       s: "([]",
       want: false,
     },
-  ])("the string $s has valid parentheses is $want", ({ s, want }) => {
+  ])("$s expected to have valid parentheses is $want", ({ s, want }) => {
     expect(isValid(s)).toBe(want);
   });
 });

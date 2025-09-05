@@ -1,22 +1,27 @@
 export function isValid(s: string): boolean {
-  if (!s.length) return false;
+  if (s.length < 2) return false;
 
-  const opPar = "({[";
-  const clPar: Record<string, string> = {
+  const pairs: Record<string, string> = {
     ")": "(",
     "}": "{",
     "]": "[",
   };
 
   const stack: Array<string> = [];
-  for (let i = 0; i < s.length; i++) {
-    switch (true) {
-      case opPar.includes(s[i]):
-        stack.push(s[i]);
+  for (const char of s) {
+    switch (char) {
+      case "(":
+      case "{":
+      case "[":
+        stack.push(char);
         continue;
-      case clPar[s[i]] === stack.at(-1):
-        stack.pop();
-        continue;
+      case ")":
+      case "}":
+      case "]":
+        if (stack.length > 0 && pairs[char] === stack.at(-1)) {
+          stack.pop();
+          continue;
+        }
       default:
         return false;
     }
