@@ -14,5 +14,7 @@ func removeDuplicates(nums []int) int {
 			writeIndex++
 		}
 	}
-	return len(hashMap)
+
+	nums = nums[:writeIndex]
+	return len(nums)
 }
