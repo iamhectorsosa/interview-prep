@@ -5,10 +5,10 @@ export function searchInsert(nums: number[], target: number): number {
   // }
   // return nums.length;
 
-  const existingIndex = nums.findIndex((el) => el == target);
-  if (existingIndex != -1) {
-    return existingIndex;
-  }
+  // const existingIndex = nums.findIndex((el) => el == target);
+  // if (existingIndex != -1) {
+  //   return existingIndex;
+  // }
 
   let leftBoundary = 0;
   let rightBoundary = nums.length - 1;
