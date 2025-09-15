@@ -1,10 +1,8 @@
 export function climbStairs(n: number): number {
-  let a = 1;
-  let b = 0;
+  let a = 0;
+  let b = 1;
   for (let i = 0; i < n; i++) {
-    let temp = a;
-    a = a + b;
-    b = temp;
+    [a, b] = [b, a + b];
   }
-  return a;
+  return b;
 }
