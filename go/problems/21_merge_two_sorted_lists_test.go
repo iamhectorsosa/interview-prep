@@ -34,9 +34,8 @@ func TestMergeTwoLists(t *testing.T) {
 		t.Run(fmt.Sprintf("provided %v and %v, we expect %v", tt.list1, tt.list2, tt.want), func(t *testing.T) {
 			list1 := toList(tt.list1)
 			list2 := toList(tt.list2)
-			want := toList(tt.want)
-			got := mergeTwoLists(list1, list2)
-			assert.Equal(t, want, got, "got %v want %v", got, want)
+			got := toInt(mergeTwoLists(list1, list2))
+			assert.Equal(t, tt.want, got, "got %v want %v", got, tt.want)
 		})
 	}
 }
@@ -54,4 +53,15 @@ func toList(nums []int) *ListNode {
 	}
 
 	return node
+}
+
+func toInt(head *ListNode) []int {
+	currentNode := head
+	result := []int{}
+	for currentNode != nil {
+		result = append(result, currentNode.Val)
+		currentNode = currentNode.Next
+	}
+
+	return result
 }
