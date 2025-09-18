@@ -5,13 +5,13 @@ func deleteDuplicates(head *ListNode) *ListNode {
 		return head
 	}
 
-	temp := head
-	for temp.Next != nil {
-		if temp.Val == temp.Next.Val {
-			temp.Next = temp.Next.Next
+	current := head
+	for current.Next != nil {
+		if current.Val == current.Next.Val {
+			current.Next = current.Next.Next
 			continue
 		}
-		temp = temp.Next
+		current = current.Next
 	}
 
 	return head
